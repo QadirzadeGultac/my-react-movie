@@ -11,7 +11,7 @@ const Movie = (props) => {
   const [favData, setFavData] = useState(true);
   console.log(favorites);
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?s=${search}&apikey=119f7834`)
+    fetch(`https://www.omdbapi.com/?s=${search}&apikey=119f7834`)
       .then(res => res.json())
       .then(data => {
         const moviesData = data.Search.map(movie => ({

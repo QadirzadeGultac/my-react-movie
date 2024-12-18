@@ -1,6 +1,6 @@
 {
   "homepage" : "https://QadirzadeGultac.github.io/my-react-movie",
-  "name": "react-project",
+  "name": "my-react-movie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
