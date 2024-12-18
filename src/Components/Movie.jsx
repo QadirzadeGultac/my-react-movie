@@ -10,15 +10,15 @@ const Movie = (props) => {
   const [favoriteInp, SetFavoriteInp] = useState("");
   const [data, setData] = useState(false);
   const [favData, setFavData] = useState(true);
-  const [error, setError] = useState(""); // Film tapılmadı mesajı üçün state
+  const [error, setError] = useState("");
 
   useEffect(() => {
     fetch(`https://www.omdbapi.com/?s=${search}&apikey=119f7834`)
       .then(res => res.json())
       .then(data => {
         if (data.Response === "False") {
-          setMovies([]); // Boş siyahı
-          setError("Film tapılmadı."); // Mesajı yaz
+          setMovies([]);
+          setError("Film tapılmadı.");
         } else {
           const moviesData = data.Search.map(movie => ({
             title: movie.Title,
@@ -28,12 +28,12 @@ const Movie = (props) => {
             disabled: false,
           }));
           setMovies(moviesData);
-          setError(""); // Əgər nəticə varsa, error mesajını sıfırla
+          setError("");
         }
       })
       .catch(err => {
         console.error(err);
-        setError("Xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin."); // Xəta mesajı
+        setError("Xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin.");
       });
   }, [search]);
 
@@ -97,7 +97,6 @@ const Movie = (props) => {
         </div>
         <div className={styles.movies}>
           <div className={styles.movie}>
-            {/* Əgər səhv varsa, onu göstər */}
             {error ? (
               <p style={{ color: "red", fontSize: "18px" }}>{error}</p>
             ) : (
