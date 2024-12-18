@@ -9,8 +9,8 @@ function App() {
   const [listMovieName, setListMovieName] = useState([]);
   return (
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/movie' element={<Movie listName={listName} setListName={setListName} movieName={listMovieName} setMovieName={setListMovieName} imbdLink={imbd} setImbdLink={setImbd}/>} />
+        {/* <Route path='/' element={<Home />} /> */}
+        <Route path='/' element={<Home listName={listName} setListName={setListName} movieName={listMovieName} setMovieName={setListMovieName} imbdLink={imbd} setImbdLink={setImbd}/>} />
         <Route path='/favorite' element={<Favorite favorites={listName} movieNames={listMovieName} movieNameDelet={setListMovieName} imbdLinkDelete={setImbd} imbdlink={imbd}/>} />
       </Routes>
   );
