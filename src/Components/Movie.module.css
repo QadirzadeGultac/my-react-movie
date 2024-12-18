@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Mogra&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header h1{
+    font-family: "Mogra", serif;
+    color: white;
+    font-size: 55px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+header{
+    background: linear-gradient(90deg, #6A0DAD, #FF8C00);
+}
+main {
+    background-color: #F5F5F5;
+    color: #333333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.area img{
+    width: 200px;
+}
+.movieText{
+    margin-left: 40px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    text-align: start;
+}
+.favorite{
+    display: flex;
+    justify-content: space-between;
+}
+.movie {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 40vw;
+    border: 2px solid;
+    border-color: #FF8C00;
+    padding: 10px;
+    border-radius: 20px;
+}
+.area{
+    display: flex;
+    margin-bottom: 15px;
+}
+.movies {
+    font-family: "EB Garamond", serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+.search{
+    margin-left: 12vw;
+    padding-top: 2vw;
+}
+.search button{
+    width: 120px;
+    font-size: 18px;
+    padding: 3px;
+    text-align: center;
+    margin-left: 2vw;
+    background-color: #A301D9;
+    color: white;
+    border-radius: 10px;
+    border-color: #A301D9;
+}
+.search input{
+    width: 18vw;
+    font-size: 15px;
+    padding: 3px 10px;
+    border-radius: 8px;
+    color:#3C3C3C;
+    border: 2.1px solid lightgrey;
+}
+input:focus{
+    outline: none;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 37vw;
+    margin-left: 1.5vw;
+    height: 400px;
+}
+.movieList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+    height: 460px;
+    border: 2px solid;
+    border-color: #6A0DAD;
+    border-radius: 20px;
+    padding: 15px;
+}
