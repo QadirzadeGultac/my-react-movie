@@ -218,6 +218,7 @@ const Movie = (props) => {
             </button>
             <NavLink to="/favorite" style={{ textDecoration: "none" }}>
               <button
+              disabled={favData}
                 onClick={() => {
                   props.setListName(favoriteInp);
                 }}
